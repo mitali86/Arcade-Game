@@ -1,20 +1,27 @@
-# Classic Arcade Game Clone Project
+Frogger(Classic ArcadeGame) Game Project
 
-## Table of Contents
+Frogger Game is a complete browser-based arcade game. But this isn’t just any arcade game! It’s a shnazzy, well-designed, feature-packed game!
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+Table of Contents
+Game Rules
+Technical
 
-## Instructions
+Game Rules
+In this game there is a Player and Enemies (Bugs). The goal of the player is to reach the water, without colliding into any one of the enemies.
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+The player can move left, right, up and down using keyboard's arrow keys. The enemies move in varying speeds on the paved block portion of the scene. Once a the player collides with an enemy, the player moves back to the start square and loses 50 points. Once the player reaches the water 10 points are added to the score.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+Technical
+This game is built as an npm project and mainly consists of the following assets:
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+index.html - contains the game's html structure.
+style.css - contains the game's board styling.
+app.js - contains all the board actions & logic.
+engine.js - provides the game loop functionality.
+resources.js - provides utility functions for loading game assets.
+Please follow below instructions to run the project in your machine:
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+1. Download repository to your local disk
+2. Open terminal and navigate to the project folder
+3. Run npm install command from terminal to install all dependencies
+4. Run npm start command to compile project and run it
